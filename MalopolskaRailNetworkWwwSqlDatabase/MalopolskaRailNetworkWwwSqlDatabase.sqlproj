@@ -64,6 +64,9 @@
     <Build Include="Tables\RailwayUnits.sql" />
     <Build Include="Tables\Railways.sql" />
     <Build Include="Tables\Owners.sql" />
+    <Build Include="Tables\Stations.sql" />
+    <Build Include="Tables\StationLocationPoints.sql" />
+    <Build Include="Tables\RollingStock.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="MalopolskaRailNetworkWwwSqlDatabase.refactorlog" />
