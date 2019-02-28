@@ -7,4 +7,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_RailwayUnits_ToGeometries]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="4fb77d96-ad43-447c-a383-4e177983731e" ChangeDateTime="02/28/2019 17:30:20">
+    <Property Name="ElementName" Value="[dbo].[Stations].[TypeOfAPoint]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Stations]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TypeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c36de94a-6918-46a5-a7cd-a3143b655cda" ChangeDateTime="02/28/2019 17:30:49">
+    <Property Name="ElementName" Value="[dbo].[Stations].[TypeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Stations]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TypeOfAPoint" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3be6c411-a992-48bf-a661-64a2519544f2" ChangeDateTime="02/28/2019 17:30:59">
+    <Property Name="ElementName" Value="[dbo].[Stations].[TypeOfAPoint]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Stations]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TypeOfAPointId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c495c76a-3bc1-4c4e-b863-5ff641397dec" ChangeDateTime="02/28/2019 18:01:35">
+    <Property Name="ElementName" Value="[dbo].[AK_RollingStock_Column]" />
+    <Property Name="ElementType" Value="SqlUniqueConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[RollingStock]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[AK_RollingStock_OwnerId_Name]" />
+  </Operation>
 </Operations>

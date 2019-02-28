@@ -65,7 +65,7 @@
     <Build Include="Tables\Railways.sql" />
     <Build Include="Tables\Owners.sql" />
     <Build Include="Tables\Stations.sql" />
-    <Build Include="Tables\StationLocationPoints.sql" />
+    <Build Include="Tables\LocationPoints.sql" />
     <Build Include="Tables\RollingStock.sql" />
     <Build Include="Tables\TypesOfAPoint.sql" />
   </ItemGroup>
