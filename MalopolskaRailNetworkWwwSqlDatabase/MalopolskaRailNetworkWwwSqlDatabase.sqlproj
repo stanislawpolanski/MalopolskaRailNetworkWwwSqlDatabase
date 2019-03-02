@@ -60,6 +60,7 @@
     <Folder Include="Database" />
     <Folder Include="Database\Tables" />
     <Folder Include="SeedingData" />
+    <Folder Include="SeedingData\JsonData" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Database\Tables\Geometries.sql" />
@@ -72,6 +73,13 @@
     <Build Include="Database\Tables\TypesOfAPoint.sql" />
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="MalopolskaRailNetworkWwwSqlDatabase.refactorlog" />
+    <None Include="SeedingData\JsonData\Geometries_Dataset.json" />
+    <None Include="SeedingData\JsonData\Owners_Dataset.json" />
+    <None Include="SeedingData\JsonData\Railways_Dataset.json" />
+    <None Include="SeedingData\JsonData\RailwayUnits_Dataset.json" />
+    <None Include="SeedingData\JsonData\RollingStock_Dataset.json" />
+    <None Include="SeedingData\JsonData\Stations_Dataset.json" />
+    <None Include="SeedingData\JsonData\StationsToGeometries_Dataset.json" />
+    <None Include="SeedingData\JsonData\TypesOfAPoint_Dataset.json" />
   </ItemGroup>
 </Project>
