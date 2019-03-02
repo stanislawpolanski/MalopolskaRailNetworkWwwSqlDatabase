@@ -60,7 +60,8 @@
     <Folder Include="Database" />
     <Folder Include="Database\Tables" />
     <Folder Include="SeedingData" />
-    <Folder Include="SeedingData\JsonData" />
+    <Folder Include="SeedingData\RawJsonData" />
+    <Folder Include="SeedingData\DataReaders" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Database\Tables\Geometries.sql" />
@@ -73,13 +74,13 @@
     <Build Include="Database\Tables\TypesOfAPoint.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="SeedingData\JsonData\Geometries_Dataset.json" />
-    <None Include="SeedingData\JsonData\Owners_Dataset.json" />
-    <None Include="SeedingData\JsonData\Railways_Dataset.json" />
-    <None Include="SeedingData\JsonData\RailwayUnits_Dataset.json" />
-    <None Include="SeedingData\JsonData\RollingStock_Dataset.json" />
-    <None Include="SeedingData\JsonData\Stations_Dataset.json" />
-    <None Include="SeedingData\JsonData\StationsToGeometries_Dataset.json" />
-    <None Include="SeedingData\JsonData\TypesOfAPoint_Dataset.json" />
+    <None Include="SeedingData\RawJsonData\Geometries_Dataset.json" />
+    <None Include="SeedingData\RawJsonData\Owners_Dataset.json" />
+    <None Include="SeedingData\RawJsonData\Railways_Dataset.json" />
+    <None Include="SeedingData\RawJsonData\RailwayUnits_Dataset.json" />
+    <None Include="SeedingData\RawJsonData\RollingStock_Dataset.json" />
+    <None Include="SeedingData\RawJsonData\Stations_Dataset.json" />
+    <None Include="SeedingData\RawJsonData\StationsToGeometries_Dataset.json" />
+    <None Include="SeedingData\RawJsonData\TypesOfAPoint_Dataset.json" />
   </ItemGroup>
 </Project>
