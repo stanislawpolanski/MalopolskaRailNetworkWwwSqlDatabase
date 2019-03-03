@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION [dbo].[GetRawJsonData]
+﻿CREATE FUNCTION [dbo].[GetRawJson]
 (
 )
 RETURNS @returntable TABLE
