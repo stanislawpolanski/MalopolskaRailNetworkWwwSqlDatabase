@@ -1,7 +1,7 @@
 ﻿CREATE FUNCTION [dbo].[GetProjectRootPath]
 (
 )
-RETURNS NVARCHAR(150)
+RETURNS NVARCHAR(MAX)
 AS
 BEGIN
 	RETURN 'C:\Users\Dell\source\repos\MalopolskaRailNetworkWwwSqlDatabase\MalopolskaRailNetworkWwwSqlDatabase'

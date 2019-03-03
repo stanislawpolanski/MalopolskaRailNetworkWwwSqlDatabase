@@ -75,9 +75,16 @@
     <Build Include="Database\Tables\RollingStock.sql" />
     <Build Include="Database\Tables\Stations.sql" />
     <Build Include="Database\Tables\TypesOfAPoint.sql" />
-    <Build Include="SeedingData\ReadData\ReadJsonData.sql" />
     <Build Include="Common\Constants\GetProjectRootPath.sql" />
     <Build Include="Common\Constants\GetJsonDataPath.sql" />
+    <Build Include="SeedingData\ReadData\ReadGeometryJson.sql" />
+    <Build Include="SeedingData\ReadData\ReadOwnersJson.sql" />
+    <Build Include="SeedingData\ReadData\ReadRailwaysJson.sql" />
+    <Build Include="SeedingData\ReadData\ReadRailwayUnitsJson.sql" />
+    <Build Include="SeedingData\ReadData\ReadRollingStockJson.sql" />
+    <Build Include="SeedingData\ReadData\ReadStationsJson.sql" />
+    <Build Include="SeedingData\ReadData\ReadStationsToGeometriesJson.sql" />
+    <Build Include="SeedingData\ReadData\ReadTypesOfAPointJson.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJsonData\Geometries_Dataset.json" />

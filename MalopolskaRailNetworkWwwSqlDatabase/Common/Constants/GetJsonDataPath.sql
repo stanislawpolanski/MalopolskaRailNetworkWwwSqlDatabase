@@ -4,6 +4,5 @@
 RETURNS NVARCHAR(MAX)
 AS
 BEGIN
-	DECLARE @RootPath NVARCHAR(150) = (SELECT dbo.GetProjectRootPath()) + '\SeedingData\RawJsonData'
-	RETURN @RootPath
+	RETURN (SELECT dbo.GetProjectRootPath()) + '\SeedingData\RawJsonData'
 END
