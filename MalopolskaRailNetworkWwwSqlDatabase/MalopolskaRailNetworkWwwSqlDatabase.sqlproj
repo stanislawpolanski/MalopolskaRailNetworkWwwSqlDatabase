@@ -96,6 +96,7 @@
     <Build Include="SeedingData\Parse\ParseRailways.sql" />
     <Build Include="SeedingData\Parse\ParseRailwaUnits.sql" />
     <Build Include="SeedingData\Parse\ParseRollingStock.sql" />
+    <Build Include="SeedingData\Parse\ParseStations.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />
