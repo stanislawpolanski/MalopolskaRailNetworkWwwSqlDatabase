@@ -72,7 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Database\Tables\Geometries.sql" />
-    <Build Include="Database\Tables\LocationPoints.sql" />
+    <Build Include="Database\Tables\StationsToGeometries.sql" />
     <Build Include="Database\Tables\Owners.sql" />
     <Build Include="Database\Tables\Railways.sql" />
     <Build Include="Database\Tables\RailwayUnits.sql" />
@@ -92,6 +92,9 @@
     <Build Include="dbo\Functions\GetRawJsonData.sql" />
     <Build Include="Security\Constants.sql" />
     <Build Include="SeedingData\Parse\ParseGeometries.sql" />
+    <Build Include="SeedingData\Parse\ParseOwners.sql" />
+    <Build Include="SeedingData\Parse\ParseRailways.sql" />
+    <Build Include="SeedingData\Parse\ParseRailwaUnits.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />
