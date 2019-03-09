@@ -62,12 +62,6 @@
     <Folder Include="SeedingData" />
     <Folder Include="SeedingData\RawJson" />
     <Folder Include="SeedingData\Read" />
-    <Folder Include="Common" />
-    <Folder Include="Common\Constants" />
-    <Folder Include="Common\Paths" />
-    <Folder Include="dbo\" />
-    <Folder Include="dbo\Functions\" />
-    <Folder Include="Security\" />
     <Folder Include="SeedingData\Parse" />
   </ItemGroup>
   <ItemGroup>
@@ -79,8 +73,6 @@
     <Build Include="Database\Tables\RollingStock.sql" />
     <Build Include="Database\Tables\Stations.sql" />
     <Build Include="Database\Tables\TypesOfAPoint.sql" />
-    <Build Include="Common\Constants\GetProjectRootPath.sql" />
-    <Build Include="Common\Constants\GetJsonDataPath.sql" />
     <Build Include="SeedingData\Read\ReadGeometryJson.sql" />
     <Build Include="SeedingData\Read\ReadOwnersJson.sql" />
     <Build Include="SeedingData\Read\ReadRailwaysJson.sql" />
@@ -89,8 +81,6 @@
     <Build Include="SeedingData\Read\ReadStationsJson.sql" />
     <Build Include="SeedingData\Read\ReadStationsToGeometriesJson.sql" />
     <Build Include="SeedingData\Read\ReadTypesOfAPointJson.sql" />
-    <Build Include="dbo\Functions\GetRawJsonData.sql" />
-    <Build Include="Security\Constants.sql" />
     <Build Include="SeedingData\Parse\ParseGeometries.sql" />
     <Build Include="SeedingData\Parse\ParseOwners.sql" />
     <Build Include="SeedingData\Parse\ParseRailways.sql" />
