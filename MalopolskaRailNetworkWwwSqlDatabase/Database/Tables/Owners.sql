@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Owners]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Name] NVARCHAR(50) NOT NULL, 
     CONSTRAINT [AK_Owners_Name] UNIQUE ([Name])
 )

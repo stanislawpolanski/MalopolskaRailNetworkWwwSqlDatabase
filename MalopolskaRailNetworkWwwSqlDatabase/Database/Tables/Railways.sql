@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Railways]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
 	[Number] SMALLINT NOT NULL, 
     [Name] NVARCHAR(100) NOT NULL, 
     [OwnerId] INT NOT NULL, 

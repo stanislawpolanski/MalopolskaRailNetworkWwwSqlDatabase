@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="caaf9f54-cf43-4e0a-b725-61d1f3fde9d4" ChangeDateTime="03/10/2019 15:28:49">
+    <Property Name="ElementName" Value="[dbo].[ParseGeometries]" />
+    <Property Name="ElementType" Value="SqlMultiStatementTableValuedFunction" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[ParseGeometries]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bb497b43-429a-4b0d-b657-f6343d16928f" ChangeDateTime="03/10/2019 16:08:56">
+    <Property Name="ElementName" Value="[dbo].[ReadGeometryJson]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[ReadGeometriesJson]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="493800fb-d4d2-4db7-b0e7-178f9a42a9ae" ChangeDateTime="03/10/2019 16:13:44">
+    <Property Name="ElementName" Value="[dbo].[InsertSeedOwnersIntoDatabase]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="Insertion" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+</Operations>

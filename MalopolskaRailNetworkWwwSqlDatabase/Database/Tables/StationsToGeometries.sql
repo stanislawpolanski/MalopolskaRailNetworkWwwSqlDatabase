@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[StationLocationPoints]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [StationId] INT NOT NULL, 
     [GeometryId] INT NULL, 
     [BeginningKmpost] DECIMAL(6, 3) NULL, 

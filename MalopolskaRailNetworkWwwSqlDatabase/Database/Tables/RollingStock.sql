@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[RollingStock]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
 	[OwnerId] INT NOT NULL, 
 	[Name] NVARCHAR(50) NOT NULL, 
 	CONSTRAINT [FK_RollingStock_ToOwners] FOREIGN KEY ([OwnerId]) REFERENCES [Owners]([Id]), 

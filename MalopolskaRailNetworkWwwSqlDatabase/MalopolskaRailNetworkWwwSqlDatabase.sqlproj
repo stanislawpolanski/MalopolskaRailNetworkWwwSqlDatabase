@@ -61,8 +61,13 @@
     <Folder Include="Database\Tables" />
     <Folder Include="SeedingData" />
     <Folder Include="SeedingData\RawJson" />
-    <Folder Include="SeedingData\Read" />
-    <Folder Include="SeedingData\Parse" />
+    <Folder Include="SeedingData\Programmability" />
+    <Folder Include="SeedingData\Programmability\Parse" />
+    <Folder Include="SeedingData\Programmability\Read" />
+    <Folder Include="SeedingData\Programmability\Insertion" />
+    <Folder Include="SeedingData\Programmability\Insertion\Procedures" />
+    <Folder Include="SeedingData\Programmability\Insertion\Types" />
+    <Folder Include="Common" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Database\Tables\Geometries.sql" />
@@ -73,22 +78,26 @@
     <Build Include="Database\Tables\RollingStock.sql" />
     <Build Include="Database\Tables\Stations.sql" />
     <Build Include="Database\Tables\TypesOfAPoint.sql" />
-    <Build Include="SeedingData\Read\ReadGeometryJson.sql" />
-    <Build Include="SeedingData\Read\ReadOwnersJson.sql" />
-    <Build Include="SeedingData\Read\ReadRailwaysJson.sql" />
-    <Build Include="SeedingData\Read\ReadRailwayUnitsJson.sql" />
-    <Build Include="SeedingData\Read\ReadRollingStockJson.sql" />
-    <Build Include="SeedingData\Read\ReadStationsJson.sql" />
-    <Build Include="SeedingData\Read\ReadStationsToGeometriesJson.sql" />
-    <Build Include="SeedingData\Read\ReadTypesOfAPointJson.sql" />
-    <Build Include="SeedingData\Parse\ParseGeometries.sql" />
-    <Build Include="SeedingData\Parse\ParseOwners.sql" />
-    <Build Include="SeedingData\Parse\ParseRailways.sql" />
-    <Build Include="SeedingData\Parse\ParseRailwaUnits.sql" />
-    <Build Include="SeedingData\Parse\ParseRollingStock.sql" />
-    <Build Include="SeedingData\Parse\ParseStations.sql" />
-    <Build Include="SeedingData\Parse\ParseStationsToGeometries.sql" />
-    <Build Include="SeedingData\Parse\ParseTypesOfAPoint.sql" />
+    <Build Include="SeedingData\Programmability\Parse\ParseGeometries.sql" />
+    <Build Include="SeedingData\Programmability\Parse\ParseOwners.sql" />
+    <Build Include="SeedingData\Programmability\Parse\ParseRailwaUnits.sql" />
+    <Build Include="SeedingData\Programmability\Parse\ParseRailways.sql" />
+    <Build Include="SeedingData\Programmability\Parse\ParseRollingStock.sql" />
+    <Build Include="SeedingData\Programmability\Parse\ParseStations.sql" />
+    <Build Include="SeedingData\Programmability\Parse\ParseStationsToGeometries.sql" />
+    <Build Include="SeedingData\Programmability\Parse\ParseTypesOfAPoint.sql" />
+    <Build Include="SeedingData\Programmability\Read\ReadGeometriesJson.sql" />
+    <Build Include="SeedingData\Programmability\Read\ReadOwnersJson.sql" />
+    <Build Include="SeedingData\Programmability\Read\ReadRailwaysJson.sql" />
+    <Build Include="SeedingData\Programmability\Read\ReadRailwayUnitsJson.sql" />
+    <Build Include="SeedingData\Programmability\Read\ReadRollingStockJson.sql" />
+    <Build Include="SeedingData\Programmability\Read\ReadStationsJson.sql" />
+    <Build Include="SeedingData\Programmability\Read\ReadStationsToGeometriesJson.sql" />
+    <Build Include="SeedingData\Programmability\Read\ReadTypesOfAPointJson.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedGeometriesIntoDatabase.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Types\GeometriesInsertionType.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Types\OwnersInsertionType.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedOwnersIntoDatabase.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />
@@ -99,5 +108,9 @@
     <None Include="SeedingData\RawJson\Stations_Dataset.json" />
     <None Include="SeedingData\RawJson\StationsToGeometries_Dataset.json" />
     <None Include="SeedingData\RawJson\TypesOfAPoint_Dataset.json" />
+    <None Include="Common\SchemaCompare.scmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="MalopolskaRailNetworkWwwSqlDatabase.refactorlog" />
   </ItemGroup>
 </Project>

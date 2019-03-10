@@ -4,17 +4,17 @@
 RETURNS @returntable TABLE
 (
 	Id int,
-	Value sys.geometry
+	Value sys.Geometry
 )
 AS
 BEGIN
-    declare @json nvarchar(max) = dbo.ReadGeometryJson()
+    declare @json nvarchar(max) = dbo.[ReadGeometriesJson]()
 
     declare @table table
     (
 	    Id int,
 	    TextValue nvarchar(max)	,
-	    Value sys.geometry
+	    Value sys.Geometry
     )
 
     insert into @table (Id, TextValue)
@@ -23,7 +23,7 @@ BEGIN
         with (Id int N'$.Id', TextValue nvarchar(max)  N'$.Value')
 
     update @table 
-	    set Value = geometry::Parse(TextValue)
+	    set Value = Geometry::Parse(TextValue)
 
     insert into @returntable(Id, Value)
         select Id, Value
