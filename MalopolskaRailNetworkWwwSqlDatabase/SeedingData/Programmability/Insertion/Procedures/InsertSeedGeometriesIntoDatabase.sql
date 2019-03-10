@@ -7,11 +7,6 @@ AS
         using @SeedTable
             on ([@SeedTable].Id = dbo.Geometries.Id)
 
-            when matched then
-                update set
-                    dbo.Geometries.Id = [@SeedTable].Id,
-                    dbo.Geometries.Value = [@SeedTable].Value
-
             when not matched then
                 insert (Id, Value) values
                 (

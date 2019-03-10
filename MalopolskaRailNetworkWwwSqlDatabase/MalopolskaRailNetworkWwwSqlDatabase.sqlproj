@@ -98,6 +98,12 @@
     <Build Include="SeedingData\Programmability\Insertion\Types\GeometriesInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\OwnersInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedOwnersIntoDatabase.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Types\RailwaysInsertionType.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Types\RailwayUnitsInsertionType.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Types\RollingStockInsertionType.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Types\StationsInsertionType.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Types\StationsToGeometriesInsertionType.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Types\TypesOfAPointInsertionType.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />
