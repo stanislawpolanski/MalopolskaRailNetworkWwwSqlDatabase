@@ -20,4 +20,11 @@
     <Property Name="NewSchema" Value="Insertion" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="840fcb54-fc7b-4c5d-8087-e029c766a570" ChangeDateTime="03/12/2019 15:49:35">
+    <Property Name="ElementName" Value="[dbo].[StationLocationPoints]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[StationToGeometries]" />
+  </Operation>
 </Operations>

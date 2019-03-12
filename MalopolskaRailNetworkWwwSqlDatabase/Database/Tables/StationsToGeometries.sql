@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[StationLocationPoints]
+﻿CREATE TABLE [dbo].[StationsToGeometries]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [StationId] INT NOT NULL, 
