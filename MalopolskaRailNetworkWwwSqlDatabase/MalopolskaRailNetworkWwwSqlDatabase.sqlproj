@@ -125,4 +125,7 @@
   <ItemGroup>
     <RefactorLog Include="MalopolskaRailNetworkWwwSqlDatabase.refactorlog" />
   </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="SeedingData\Script.PostDeployment.sql" />
+  </ItemGroup>
 </Project>
