@@ -25,5 +25,9 @@ BEGIN
             [EndingKmpost] DECIMAL(6, 3), 
             [RailwayId] INT
             )
+
+        update @returntable
+        set [RailwayId] = 10118
+        where [RailwayId] = 28 and [GeometryId] is not null
     return
 END
