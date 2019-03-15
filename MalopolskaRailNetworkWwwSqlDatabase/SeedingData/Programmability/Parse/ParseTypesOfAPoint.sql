@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION [dbo].[ParseTypesOfAPoint]
+﻿CREATE FUNCTION [DataSeedInsertionSchema].[ParseTypesOfAPoint]
 (
 )
 RETURNS @returntable TABLE

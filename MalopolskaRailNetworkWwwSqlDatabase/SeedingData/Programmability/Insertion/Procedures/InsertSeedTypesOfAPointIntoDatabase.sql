@@ -1,5 +1,5 @@
-﻿CREATE PROCEDURE [dbo].[InsertSeedTypesOfAPointIntoDatabase]
-    @SeedTable dbo.TypesOfAPointInsertionType readonly
+﻿CREATE PROCEDURE [DataSeedInsertionSchema].[InsertSeedTypesOfAPointIntoDatabase]
+    @SeedTable DataSeedInsertionSchema.TypesOfAPointInsertionType readonly
 AS
     set identity_insert dbo.TypesOfAPoint on
 

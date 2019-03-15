@@ -1,5 +1,5 @@
-﻿CREATE PROCEDURE [dbo].[InsertSeedRollingStockIntoDatabase]
-    @SeedTable dbo.RollingStockInsertionType readonly
+﻿CREATE PROCEDURE [DataSeedInsertionSchema].[InsertSeedRollingStockIntoDatabase]
+    @SeedTable DataSeedInsertionSchema.RollingStockInsertionType readonly
 AS
     set identity_insert dbo.RollingStock on
 

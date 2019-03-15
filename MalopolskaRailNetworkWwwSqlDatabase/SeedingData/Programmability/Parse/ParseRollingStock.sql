@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION [dbo].[ParseRollingStock]
+﻿CREATE FUNCTION [DataSeedInsertionSchema].[ParseRollingStock]
 (
 )
 RETURNS @returntable TABLE

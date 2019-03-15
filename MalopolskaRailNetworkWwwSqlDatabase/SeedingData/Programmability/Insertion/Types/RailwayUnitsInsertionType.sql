@@ -1,4 +1,4 @@
-﻿CREATE TYPE [dbo].[RailwayUnitsInsertionType] AS TABLE
+﻿CREATE TYPE [DataSeedInsertionSchema].[RailwayUnitsInsertionType] AS TABLE
 (
     [Id] INT NOT NULL PRIMARY KEY, 
     [Name] NVARCHAR(50) NOT NULL, 

@@ -1,4 +1,4 @@
-﻿CREATE TYPE [dbo].[RollingStockInsertionType] AS TABLE
+﻿CREATE TYPE [DataSeedInsertionSchema].[RollingStockInsertionType] AS TABLE
 (
     [Id] INT NOT NULL PRIMARY KEY, 
 	[OwnerId] INT NOT NULL, 

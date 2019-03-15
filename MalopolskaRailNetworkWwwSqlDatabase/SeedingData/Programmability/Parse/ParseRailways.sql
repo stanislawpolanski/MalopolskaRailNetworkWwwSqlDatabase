@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION [dbo].[ParseRailways]
+﻿CREATE FUNCTION [DataSeedInsertionSchema].[ParseRailways]
 (
 )
 RETURNS @returntable TABLE

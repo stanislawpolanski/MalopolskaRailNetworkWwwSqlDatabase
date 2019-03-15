@@ -1,5 +1,5 @@
-﻿CREATE PROCEDURE [dbo].[InsertSeedStationsToGeometriesIntoDatabase]
-    @SeedTable dbo.StationsToGeometriesInsertionType readonly
+﻿CREATE PROCEDURE [DataSeedInsertionSchema].[InsertSeedStationsToGeometriesIntoDatabase]
+    @SeedTable DataSeedInsertionSchema.StationsToGeometriesInsertionType readonly
 AS
     set identity_insert dbo.StationsToGeometries on
 

@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION [dbo].[ParseStationsToGeometries]
+﻿CREATE FUNCTION [DataSeedInsertionSchema].[ParseStationsToGeometries]
 (
 )
 RETURNS @returntable TABLE

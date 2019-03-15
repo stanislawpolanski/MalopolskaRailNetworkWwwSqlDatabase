@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION [dbo].[ReadGeometriesJson]
+﻿CREATE FUNCTION [DataSeedInsertionSchema].[ReadGeometriesJson]
 (
 )
 RETURNS NVARCHAR(MAX)

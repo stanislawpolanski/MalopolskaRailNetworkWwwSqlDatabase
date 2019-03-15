@@ -1,4 +1,4 @@
-﻿CREATE TYPE [dbo].[StationsToGeometriesInsertionType] AS TABLE
+﻿CREATE TYPE [DataSeedInsertionSchema].[StationsToGeometriesInsertionType] AS TABLE
 (
     [Id] INT NOT NULL PRIMARY KEY, 
     [StationId] INT NOT NULL, 

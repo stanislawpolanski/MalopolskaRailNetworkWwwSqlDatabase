@@ -1,5 +1,5 @@
-﻿CREATE PROCEDURE [dbo].[InsertSeedRailwayUnitsIntoDatabase]
-    @SeedTable dbo.RailwayUnitsInsertionType readonly
+﻿CREATE PROCEDURE [DataSeedInsertionSchema].[InsertSeedRailwayUnitsIntoDatabase]
+    @SeedTable DataSeedInsertionSchema.RailwayUnitsInsertionType readonly
 AS
     set identity_insert dbo.RailwayUnits on
 

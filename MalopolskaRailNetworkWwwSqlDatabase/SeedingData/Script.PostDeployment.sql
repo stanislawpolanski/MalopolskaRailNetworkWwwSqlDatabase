@@ -1,56 +1,56 @@
 ﻿---- Post deployment data insertion
 -- geometries
-declare @GeometriesSeed dbo.GeometriesInsertionType
+declare @GeometriesSeed DataSeedInsertionSchema.GeometriesInsertionType
 insert into @GeometriesSeed
-    select * from dbo.ParseGeometries();
-
-exec dbo.InsertSeedGeometriesIntoDatabase @GeometriesSeed;
+    select * from DataSeedInsertionSchema.ParseGeometries();
+    
+exec DataSeedInsertionSchema.InsertSeedGeometriesIntoDatabase @GeometriesSeed;
 
 -- owners
-declare @OnwersSeed dbo.OwnersInsertionType;
+declare @OnwersSeed DataSeedInsertionSchema.OwnersInsertionType;
 insert into @OnwersSeed
-    select * from dbo.ParseOwners();
+    select * from DataSeedInsertionSchema.ParseOwners();
 
-exec dbo.InsertSeedOwnersIntoDatabase @OnwersSeed;
+exec DataSeedInsertionSchema.InsertSeedOwnersIntoDatabase @OnwersSeed;
 
 -- railways
-declare @RailwaysSeed dbo.RailwaysInsertionType;
+declare @RailwaysSeed DataSeedInsertionSchema.RailwaysInsertionType;
 insert into @RailwaysSeed
-    select * from dbo.ParseRailways();
+    select * from DataSeedInsertionSchema.ParseRailways();
 
-exec dbo.InsertSeedRailwaysIntoDatabase @RailwaysSeed;
+exec DataSeedInsertionSchema.InsertSeedRailwaysIntoDatabase @RailwaysSeed;
 
 -- railway units
-declare @RailwayUnitsSeed dbo.RailwayUnitsInsertionType;
+declare @RailwayUnitsSeed DataSeedInsertionSchema.RailwayUnitsInsertionType;
 insert into @RailwayUnitsSeed
-    select * from dbo.ParseRailwayUnits();
+    select * from DataSeedInsertionSchema.ParseRailwayUnits();
 
-exec dbo.InsertSeedRailwayUnitsIntoDatabase @RailwayUnitsSeed;
+exec DataSeedInsertionSchema.InsertSeedRailwayUnitsIntoDatabase @RailwayUnitsSeed;
 
 -- Rolling stock
-declare @RollingStockSeed dbo.RollingStockInsertionType;
+declare @RollingStockSeed DataSeedInsertionSchema.RollingStockInsertionType;
 insert into @RollingStockSeed
-    select * from dbo.ParseRollingStock();
+    select * from DataSeedInsertionSchema.ParseRollingStock();
 
-exec dbo.InsertSeedRollingStockIntoDatabase @RollingStockSeed;
+exec DataSeedInsertionSchema.InsertSeedRollingStockIntoDatabase @RollingStockSeed;
 
 -- Stations
-declare @StationsSeed dbo.StationsInsertionType;
+declare @StationsSeed DataSeedInsertionSchema.StationsInsertionType;
 insert into @StationsSeed
-    select * from dbo.ParseStations();
+    select * from DataSeedInsertionSchema.ParseStations();
 
-exec dbo.InsertSeedStationsIntoDatabase @StationsSeed;
+exec DataSeedInsertionSchema.InsertSeedStationsIntoDatabase @StationsSeed;
 
 -- Stations to geometries
-declare @StationsToGeometriesSeed dbo.StationsToGeometriesInsertionType;
+declare @StationsToGeometriesSeed DataSeedInsertionSchema.StationsToGeometriesInsertionType;
 insert into @StationsToGeometriesSeed
-    select * from dbo.ParseStationsToGeometries();
+    select * from DataSeedInsertionSchema.ParseStationsToGeometries();
 
-exec dbo.InsertSeedStationsToGeometriesIntoDatabase @StationsToGeometriesSeed;
+exec DataSeedInsertionSchema.InsertSeedStationsToGeometriesIntoDatabase @StationsToGeometriesSeed;
 
 -- Types of a Point
-declare @TypesOfAPointSeed dbo.TypesOfAPointInsertionType;
+declare @TypesOfAPointSeed DataSeedInsertionSchema.TypesOfAPointInsertionType;
 insert into @TypesOfAPointSeed
-    select * from dbo.ParseTypesOfAPoint()
+    select * from DataSeedInsertionSchema.ParseTypesOfAPoint()
 
-exec dbo.InsertSeedTypesOfAPointIntoDatabase @TypesOfAPointSeed;
+exec DataSeedInsertionSchema.InsertSeedTypesOfAPointIntoDatabase @TypesOfAPointSeed;

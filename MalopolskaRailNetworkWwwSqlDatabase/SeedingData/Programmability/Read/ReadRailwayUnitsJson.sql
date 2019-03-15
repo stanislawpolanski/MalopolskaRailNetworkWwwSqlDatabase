@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION [dbo].[ReadRailwayUnitsJson]
+﻿CREATE FUNCTION [DataSeedInsertionSchema].[ReadRailwayUnitsJson]
 (
 )
 RETURNS NVARCHAR(MAX)

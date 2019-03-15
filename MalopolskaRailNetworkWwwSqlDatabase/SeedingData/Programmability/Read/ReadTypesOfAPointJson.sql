@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION [dbo].[ReadTypesOfAPointJson]
+﻿CREATE FUNCTION [DataSeedInsertionSchema].[ReadTypesOfAPointJson]
 (
 )
 RETURNS NVARCHAR(MAX)

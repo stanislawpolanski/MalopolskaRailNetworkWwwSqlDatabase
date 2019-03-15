@@ -1,5 +1,5 @@
-﻿CREATE PROCEDURE [dbo].[InsertSeedOwnersIntoDatabase]
-    @SeedTable dbo.OwnersInsertionType readonly
+﻿CREATE PROCEDURE [DataSeedInsertionSchema].[InsertSeedOwnersIntoDatabase]
+    @SeedTable DataSeedInsertionSchema.OwnersInsertionType readonly
 AS
     set identity_insert dbo.Owners on
 
