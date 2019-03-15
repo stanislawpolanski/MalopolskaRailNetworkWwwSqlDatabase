@@ -27,4 +27,11 @@
     <Property Name="ParentElementType" Value="SqlSchema" />
     <Property Name="NewName" Value="[StationToGeometries]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="31f4449c-9a61-4dd3-a314-b168eb64e19b" ChangeDateTime="03/15/2019 18:28:04">
+    <Property Name="ElementName" Value="[dbo].[Geometries].[Value]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Geometries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SpatialData" />
+  </Operation>
 </Operations>

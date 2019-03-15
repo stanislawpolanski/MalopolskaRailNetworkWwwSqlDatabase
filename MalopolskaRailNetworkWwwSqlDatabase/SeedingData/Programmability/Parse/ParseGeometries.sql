@@ -14,7 +14,7 @@ BEGIN
     (
 	    Id int,
 	    TextValue nvarchar(max)	,
-	    Value sys.Geometry
+	    SpatialData sys.Geometry
     )
 
     insert into @table (Id, TextValue)
@@ -23,10 +23,10 @@ BEGIN
         with (Id int N'$.Id', TextValue nvarchar(max)  N'$.Value')
 
     update @table 
-	    set Value = Geometry::Parse(TextValue)
+	    set SpatialData = Geometry::Parse(TextValue)
 
     insert into @returntable(Id, Value)
-        select Id, Value
+        select Id, SpatialData
         from @table
 
     return

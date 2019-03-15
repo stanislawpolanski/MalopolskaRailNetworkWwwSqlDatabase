@@ -8,10 +8,10 @@ AS
             on ([@SeedTable].Id = dbo.Geometries.Id)
 
             when not matched then
-                insert (Id, Value) values
+                insert (Id, SpatialData) values
                 (
                     [@SeedTable].Id,
-                    [@SeedTable].Value
+                    [@SeedTable].SpatialData
                 )
     ;
 
