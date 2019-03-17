@@ -11,7 +11,7 @@ RETURNS @returntable TABLE
 )
 AS
 BEGIN
-    declare @json nvarchar(max) = dbo.ReadRailwaysJson();
+    declare @json nvarchar(max) = DataSeedInsertionSchema.ReadRailwaysJson();
     insert into @returntable(Id, Number, Name, OwnerId, GeometryId)
         select * from openjson(@json)
         with(	

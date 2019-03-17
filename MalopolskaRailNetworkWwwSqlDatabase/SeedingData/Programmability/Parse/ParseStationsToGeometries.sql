@@ -13,7 +13,7 @@ RETURNS @returntable TABLE
 )
 AS
 BEGIN
-    declare @json nvarchar(max) = dbo.ReadStationsToGeometriesJson();
+    declare @json nvarchar(max) = DataSeedInsertionSchema.ReadStationsToGeometriesJson();
     insert into @returntable
         select * from openjson(@json)
         with(	

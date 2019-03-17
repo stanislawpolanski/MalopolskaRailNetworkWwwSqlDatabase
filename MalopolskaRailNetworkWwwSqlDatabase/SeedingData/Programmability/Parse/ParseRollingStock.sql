@@ -9,7 +9,7 @@ RETURNS @returntable TABLE
 )
 AS
 BEGIN
-    declare @json nvarchar(max) = dbo.ReadRollingStockJson();
+    declare @json nvarchar(max) = DataSeedInsertionSchema.ReadRollingStockJson();
     insert into @returntable(Id, OwnerId, Name)
         select * from openjson(@json)
         with(Id int N'$.Id', OwnerId int, Name nvarchar(50))

@@ -8,7 +8,7 @@ RETURNS @returntable TABLE
 )
 AS
 BEGIN
-    declare @json nvarchar(max) = dbo.ReadOwnersJson();
+    declare @json nvarchar(max) = DataSeedInsertionSchema.ReadOwnersJson();
     insert into @returntable(Id, Name)
         select * from openjson(@json)
         with(Id int N'$.Id', Name nvarchar(max)  N'$.Name')

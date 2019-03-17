@@ -8,7 +8,7 @@ RETURNS @returntable TABLE
 )
 AS
 BEGIN
-    declare @json nvarchar(max) = dbo.ReadTypesOfAPointJson();
+    declare @json nvarchar(max) = DataSeedInsertionSchema.ReadTypesOfAPointJson();
     insert into @returntable
         select * from openjson(@json)
         with(	

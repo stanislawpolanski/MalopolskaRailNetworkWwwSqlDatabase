@@ -8,7 +8,7 @@ RETURNS @returntable TABLE
 )
 AS
 BEGIN
-    declare @json nvarchar(max) = dbo.[ReadGeometriesJson]()
+    declare @json nvarchar(max) = DataSeedInsertionSchema.[ReadGeometriesJson]()
 
     declare @table table
     (
