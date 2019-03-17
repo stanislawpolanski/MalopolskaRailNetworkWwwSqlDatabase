@@ -1,4 +1,11 @@
 ﻿---- Post deployment data insertion
+-- Types of a Point
+declare @TypesOfAPointSeed DataSeedInsertionSchema.TypesOfAPointInsertionType;
+insert into @TypesOfAPointSeed
+    select * from DataSeedInsertionSchema.ParseTypesOfAPoint()
+
+exec DataSeedInsertionSchema.InsertSeedTypesOfAPointIntoDatabase @TypesOfAPointSeed;
+
 -- geometries
 declare @GeometriesSeed DataSeedInsertionSchema.GeometriesInsertionType
 insert into @GeometriesSeed
@@ -48,9 +55,30 @@ insert into @StationsToGeometriesSeed
 
 exec DataSeedInsertionSchema.InsertSeedStationsToGeometriesIntoDatabase @StationsToGeometriesSeed;
 
--- Types of a Point
-declare @TypesOfAPointSeed DataSeedInsertionSchema.TypesOfAPointInsertionType;
-insert into @TypesOfAPointSeed
-    select * from DataSeedInsertionSchema.ParseTypesOfAPoint()
+-- clear database 
+drop procedure DataSeedInsertionSchema.InsertSeedGeometriesIntoDatabase
+drop procedure DataSeedInsertionSchema.InsertSeedOwnersIntoDatabase
+drop procedure DataSeedInsertionSchema.InsertSeedRailwaysIntoDatabase
+drop procedure DataSeedInsertionSchema.InsertSeedRailwayUnitsIntoDatabase
+drop procedure DataSeedInsertionSchema.InsertSeedRollingStockIntoDatabase
+drop procedure DataSeedInsertionSchema.InsertSeedStationsIntoDatabase
+drop procedure DataSeedInsertionSchema.InsertSeedStationsToGeometriesIntoDatabase
+drop procedure DataSeedInsertionSchema.InsertSeedTypesOfAPointIntoDatabase
 
-exec DataSeedInsertionSchema.InsertSeedTypesOfAPointIntoDatabase @TypesOfAPointSeed;
+drop function DataSeedInsertionSchema.ParseGeometries
+drop function DataSeedInsertionSchema.ParseRailways
+drop function DataSeedInsertionSchema.ParseRollingStock
+drop function DataSeedInsertionSchema.ParseOwners
+drop function DataSeedInsertionSchema.ParseRailwayUnits
+drop function DataSeedInsertionSchema.ParseStations
+drop function DataSeedInsertionSchema.ParseStationsToGeometries
+drop function DataSeedInsertionSchema.ParseTypesOfAPoint
+
+drop function DataSeedInsertionSchema.ReadGeometriesJson
+drop function DataSeedInsertionSchema.ReadOwnersJson
+drop function DataSeedInsertionSchema.ReadRailwaysJson
+drop function DataSeedInsertionSchema.ReadRailwayUnitsJson
+drop function DataSeedInsertionSchema.ReadRollingStockJson
+drop function DataSeedInsertionSchema.ReadStationsJson
+drop function DataSeedInsertionSchema.ReadStationsToGeometriesJson
+drop function DataSeedInsertionSchema.ReadTypesOfAPointJson
