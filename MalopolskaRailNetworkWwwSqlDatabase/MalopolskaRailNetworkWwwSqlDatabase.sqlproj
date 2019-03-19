@@ -111,6 +111,8 @@
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedStationsToGeometriesIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedTypesOfAPointIntoDatabase.sql" />
     <Build Include="SeedingData\DataSeedInsertionSchema.sql" />
+    <Build Include="Database\Tables\Photos.sql" />
+    <Build Include="Database\Tables\PhotosToObjectsOfInterest.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />

@@ -34,4 +34,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="SpatialData" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="6ee94b5b-06c7-40b1-8690-d2a60fcfe485" ChangeDateTime="03/19/2019 19:43:52">
+    <Property Name="ElementName" Value="[dbo].[FK_PhotosToObjectsOfInterest_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[PhotosToObjectsOfInterest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_PhotosToObjectsOfInterest_ObjectsOfInterest]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="50f05777-0aae-4bde-ad21-5527a5dbd326" ChangeDateTime="03/19/2019 19:44:36">
+    <Property Name="ElementName" Value="[dbo].[PhotosToObjectsOfInterest].[ObjectId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PhotosToObjectsOfInterest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ObjectOfInterestId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ffd16ca6-ab7d-4749-b75a-3385466f4a02" ChangeDateTime="03/19/2019 19:45:15">
+    <Property Name="ElementName" Value="[dbo].[FK_PhotosToObjectsOfInterest_ObjectsOfInterest]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[PhotosToObjectsOfInterest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_PhotosToObjectsOfInterest_ToObjectsOfInterest]" />
+  </Operation>
 </Operations>
