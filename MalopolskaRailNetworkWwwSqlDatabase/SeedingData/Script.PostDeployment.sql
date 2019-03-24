@@ -48,6 +48,13 @@ insert into @StationsSeed (Id, RailwayUnitId, TypeOfAPointId)
 
 exec DataSeedInsertionSchema.Merge_Stations_IntoStations @StationsSeed;
 
+-- Insert stations into objects of interest
+declare @Stations_ToObjectsOfInterest_Seed DataSeedInsertionSchema.ObjectsOfInterestInsertionType;
+insert into @Stations_ToObjectsOfInterest_Seed (Id, OwnerId, Name)
+    select Id, OwnerId, Name from DataSeedInsertionSchema.ParseStations();
+
+exec DataSeedInsertionSchema.Merge_Stations_IntoObjectsOfInterest @Stations_ToObjectsOfInterest_Seed;
+
 -- Stations to geometries
 declare @StationsToGeometriesSeed DataSeedInsertionSchema.StationsToGeometriesInsertionType;
 insert into @StationsToGeometriesSeed
@@ -76,6 +83,7 @@ drop procedure DataSeedInsertionSchema.InsertSeedRailwaysIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedRailwayUnitsIntoDatabase
 drop procedure DataSeedInsertionSchema.Merge_RollingStock_IntoObjectsOfInterest
 drop procedure DataSeedInsertionSchema.Merge_Stations_IntoStations
+drop procedure DataSeedInsertionSchema.Merge_Stations_IntoObjectsOfInterest
 drop procedure DataSeedInsertionSchema.InsertSeedStationsToGeometriesIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedTypesOfAPointIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedPhotosIntoDatabase
