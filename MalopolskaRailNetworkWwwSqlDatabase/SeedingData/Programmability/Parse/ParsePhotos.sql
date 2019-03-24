@@ -10,7 +10,7 @@ RETURNS @returntable TABLE
 )
 AS
 BEGIN
-    declare @json nvarchar(max) = DataSeedInsertionSchema.ReadOwnersJson();
+    declare @json nvarchar(max) = DataSeedInsertionSchema.ReadPhotosJson();
     insert into @returntable(Id, FilePath, AdditionDateTime, PhotoDescription)
         select * from openjson(@json)
         with(Id int N'$.Id', FilePath nvarchar(50) N'$.FilePath', AdditionDateTime datetime2 N'$.AdditionDateTime', PhotoDescription nvarchar(500) N'$.Description')

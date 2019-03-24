@@ -68,6 +68,7 @@
     <Folder Include="SeedingData\Programmability\Insertion\Procedures" />
     <Folder Include="SeedingData\Programmability\Insertion\Types" />
     <Folder Include="Common" />
+    <Folder Include="SeedingData\Schema" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Database\Tables\Geometries.sql" />
@@ -110,7 +111,6 @@
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedStationsIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedStationsToGeometriesIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedTypesOfAPointIntoDatabase.sql" />
-    <Build Include="SeedingData\DataSeedInsertionSchema.sql" />
     <Build Include="Database\Tables\Photos.sql" />
     <Build Include="Database\Tables\PhotosToObjectsOfInterest.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedPhotosIntoDatabase.sql" />
@@ -118,9 +118,10 @@
     <Build Include="SeedingData\Programmability\Insertion\Types\PhotosInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\PhotosToObjectsOfInterestInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Parse\ParsePhotos.sql" />
-    <Build Include="SeedingData\Programmability\Parse\ParsePhotosToObjects.sql" />
+    <Build Include="SeedingData\Programmability\Parse\ParsePhotosToObjectsOfInterest.sql" />
     <Build Include="SeedingData\Programmability\Read\ReadPhotosJson.sql" />
-    <Build Include="SeedingData\Programmability\Read\ReadPhotosToObjectsJson.sql" />
+    <Build Include="SeedingData\Programmability\Read\ReadPhotosToObjectsOfInterestJson.sql" />
+    <Build Include="SeedingData\Schema\DataSeedInsertionSchema.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />

@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[InsertSeedPhotosToObjectsOfInterestIntoDatabase]
+﻿CREATE PROCEDURE [DataSeedInsertionSchema].[InsertSeedPhotosToObjectsOfInterestIntoDatabase]
     @SeedTable DataSeedInsertionSchema.PhotosToObjectsOfInterestInsertionType readonly
 AS
     set identity_insert dbo.PhotosToObjectsOfInterest on

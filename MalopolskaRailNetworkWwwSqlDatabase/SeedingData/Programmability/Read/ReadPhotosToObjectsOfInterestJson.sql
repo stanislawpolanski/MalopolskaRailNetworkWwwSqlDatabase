@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION [DataSeedInsertionSchema].[ReadPhotosToObjectsJson]
+﻿CREATE FUNCTION [DataSeedInsertionSchema].[ReadPhotosToObjectsOfInterestJson]
 (
 )
 RETURNS NVARCHAR(MAX)

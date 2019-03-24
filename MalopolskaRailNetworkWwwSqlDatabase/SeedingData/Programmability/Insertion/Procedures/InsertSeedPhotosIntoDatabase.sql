@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[InsertSeedPhotosIntoDatabase]
+﻿CREATE PROCEDURE [DataSeedInsertionSchema].[InsertSeedPhotosIntoDatabase]
     @SeedTable DataSeedInsertionSchema.PhotosInsertionType readonly
 AS
     set identity_insert dbo.Photos on

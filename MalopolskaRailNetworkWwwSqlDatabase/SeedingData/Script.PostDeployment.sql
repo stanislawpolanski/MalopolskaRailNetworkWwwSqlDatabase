@@ -55,6 +55,20 @@ insert into @StationsToGeometriesSeed
 
 exec DataSeedInsertionSchema.InsertSeedStationsToGeometriesIntoDatabase @StationsToGeometriesSeed;
 
+-- Photos table seed
+declare @PhotosSeed DataSeedInsertionSchema.PhotosInsertionType;
+insert into @PhotosSeed
+    select * from DataSeedInsertionSchema.ParsePhotos();
+
+exec DataSeedInsertionSchema.InsertSeedPhotosIntoDatabase @PhotosSeed;
+
+---- Photos to objects table
+--declare @PhotosToObjectsOfInterestSeed DataSeedInsertionSchema.PhotosToObjectsOfInterestInsertionType;
+--insert into @PhotosToObjectsOfInterestSeed
+--    select * from DataSeedInsertionSchema.ParsePhotosToObjectsOfInterest();
+
+--exec DataSeedInsertionSchema.InsertSeedPhotosToObjectsOfInterestIntoDatabase @PhotosToObjectsOfInterestSeed
+
 -- clear database 
 drop procedure DataSeedInsertionSchema.InsertSeedGeometriesIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedOwnersIntoDatabase
