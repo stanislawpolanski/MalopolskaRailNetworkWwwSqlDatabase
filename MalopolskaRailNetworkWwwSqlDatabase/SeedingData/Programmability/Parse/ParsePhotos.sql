@@ -1,16 +1,18 @@
-﻿CREATE FUNCTION [dbo].[ParsePhotos]
+﻿CREATE FUNCTION [DataSeedInsertionSchema].[ParsePhotos]
 (
-    @param1 int,
-    @param2 char(5)
 )
 RETURNS @returntable TABLE
 (
-    c1 int,
-    c2 char(5)
+    [Id] INT NOT NULL PRIMARY KEY, 
+    [FilePath] NVARCHAR(50) NOT NULL, 
+    [AdditionDateTime] DATETIME2 NULL, 
+    [PhotoDescription] NVARCHAR(500) NULL
 )
 AS
 BEGIN
-    INSERT @returntable
-    SELECT @param1, @param2
-    RETURN
+    declare @json nvarchar(max) = DataSeedInsertionSchema.ReadOwnersJson();
+    insert into @returntable(Id, FilePath, AdditionDateTime, PhotoDescription)
+        select * from openjson(@json)
+        with(Id int N'$.Id', FilePath nvarchar(50) N'$.FilePath', AdditionDateTime datetime2 N'$.AdditionDateTime', PhotoDescription nvarchar(500) N'$.Description')
+    return
 END

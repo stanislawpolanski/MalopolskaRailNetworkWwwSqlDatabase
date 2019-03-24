@@ -4,7 +4,7 @@
 RETURNS @returntable TABLE
 (
 	Id int,
-	Value sys.Geometry
+	Value sys.geometry
 )
 AS
 BEGIN
@@ -14,7 +14,7 @@ BEGIN
     (
 	    Id int,
 	    TextValue nvarchar(max)	,
-	    SpatialData sys.Geometry
+	    SpatialData sys.geometry
     )
 
     insert into @table (Id, TextValue)

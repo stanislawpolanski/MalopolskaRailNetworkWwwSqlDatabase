@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[PhotosToObjectsOfInterest]
 (
-    [Id] INT NOT NULL PRIMARY KEY, 
+    [Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [PhotoId] INT NOT NULL,
     [ObjectOfInterestId] INT NOT NULL, 
     CONSTRAINT [FK_PhotosToObjectsOfInterest_ToObjectsOfInterest] FOREIGN KEY ([ObjectOfInterestId]) REFERENCES [Stations]([Id]), 

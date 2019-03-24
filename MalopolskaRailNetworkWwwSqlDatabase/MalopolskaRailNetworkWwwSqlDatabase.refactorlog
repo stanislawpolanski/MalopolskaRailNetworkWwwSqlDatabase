@@ -55,4 +55,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_PhotosToObjectsOfInterest_ToObjectsOfInterest]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="e21cd8fa-9677-4a5c-8e24-f911dbc5d623" ChangeDateTime="03/24/2019 11:14:04">
+    <Property Name="ElementName" Value="[dbo].[Photos].[Description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Photos]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PhotoDescription" />
+  </Operation>
 </Operations>

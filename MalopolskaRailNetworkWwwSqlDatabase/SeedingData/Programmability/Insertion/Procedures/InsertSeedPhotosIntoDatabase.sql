@@ -8,12 +8,12 @@ AS
             on ([@SeedTable].Id = dbo.Photos.Id)
 
             when not matched then
-                insert (Id, FilePath, AdditionDateTime, Description) values
+                insert (Id, FilePath, AdditionDateTime, PhotoDescription) values
                 (
                     [@SeedTable].Id,
                     [@SeedTable].FilePath,
                     [@SeedTable].AdditionDateTime,
-                    [@SeedTable].Description
+                    [@SeedTable].PhotoDescription
                 )
     ;
 

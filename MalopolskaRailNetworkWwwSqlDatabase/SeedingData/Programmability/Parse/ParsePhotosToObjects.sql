@@ -1,16 +1,17 @@
-﻿CREATE FUNCTION [dbo].[ParsePhotosToObjects]
+﻿CREATE FUNCTION [DataSeedInsertionSchema].[ParsePhotosToObjects]
 (
-    @param1 int,
-    @param2 char(5)
 )
 RETURNS @returntable TABLE
 (
-    c1 int,
-    c2 char(5)
+    [Id] INT NOT NULL PRIMARY KEY, 
+    [PhotoId] INT NOT NULL,
+    [ObjectOfInterestId] INT NOT NULL
 )
 AS
 BEGIN
-    INSERT @returntable
-    SELECT @param1, @param2
-    RETURN
+    declare @json nvarchar(max) = DataSeedInsertionSchema.ReadPhotosToObjectsJson();
+    insert into @returntable
+        select * from openjson(@json)
+        with(Id int N'$.Id', PhotoId int N'$.PhotoId', ObjectOfInterestId int N'$.ObjectId')
+    return
 END
