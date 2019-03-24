@@ -69,7 +69,7 @@ insert into @PhotosSeed
 
 exec DataSeedInsertionSchema.InsertSeedPhotosIntoDatabase @PhotosSeed;
 
--- Photos to objects table
+-- Photos to objects of interest table
 declare @PhotosToObjectsOfInterestSeed DataSeedInsertionSchema.PhotosToObjectsOfInterestInsertionType;
 insert into @PhotosToObjectsOfInterestSeed
     select * from DataSeedInsertionSchema.ParsePhotosToObjectsOfInterest();
