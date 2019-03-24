@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [DataSeedInsertionSchema].[InsertSeedStationsIntoDatabase]
+﻿CREATE PROCEDURE [DataSeedInsertionSchema].[Merge_Stations_IntoStations]
     @SeedTable DataSeedInsertionSchema.StationsInsertionType readonly
 AS
     set identity_insert dbo.Stations on
@@ -8,11 +8,9 @@ AS
             on ([@SeedTable].Id = dbo.Stations.Id)
 
             when not matched then
-                insert (Id, Name, OwnerId, RailwayUnitId, TypeOfAPointId) values
+                insert (Id, RailwayUnitId, TypeOfAPointId) values
                 (
                     [@SeedTable].[Id], 
-                    [@SeedTable].[Name], 
-                    [@SeedTable].[OwnerId], 
                     [@SeedTable].[RailwayUnitId], 
                     [@SeedTable].[TypeOfAPointId]
                 )

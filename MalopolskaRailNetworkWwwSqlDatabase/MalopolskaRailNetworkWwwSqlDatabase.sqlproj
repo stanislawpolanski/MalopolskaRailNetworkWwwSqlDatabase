@@ -106,7 +106,7 @@
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedRailwayUnitsIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedRailwaysIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\Merge_RollingStock_IntoObjectsOfInterest.sql" />
-    <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedStationsIntoDatabase.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Procedures\Merge_Stations_IntoStations.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedStationsToGeometriesIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedTypesOfAPointIntoDatabase.sql" />
     <Build Include="Database\Tables\Photos.sql" />
