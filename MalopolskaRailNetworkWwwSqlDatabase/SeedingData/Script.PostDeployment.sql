@@ -1,10 +1,10 @@
 ﻿---- Post deployment data insertion
 -- Types of a Point
-declare @TypesOfAPointSeed DataSeedInsertionSchema.TypesOfAPointInsertionType;
-insert into @TypesOfAPointSeed
+declare @TypesOfAStationSeed DataSeedInsertionSchema.TypesOfAStation_InsertionType;
+insert into @TypesOfAStationSeed
     select * from DataSeedInsertionSchema.ParseTypesOfAPoint()
 
-exec DataSeedInsertionSchema.InsertSeedTypesOfAPointIntoDatabase @TypesOfAPointSeed;
+exec DataSeedInsertionSchema.Merge_TypesOfAPoint_IntoTypesOfAStation @TypesOfAStationSeed;
 
 -- geometries
 declare @GeometriesSeed DataSeedInsertionSchema.GeometriesInsertionType
@@ -85,7 +85,7 @@ drop procedure DataSeedInsertionSchema.Merge_RollingStock_IntoObjectsOfInterest
 drop procedure DataSeedInsertionSchema.Merge_Stations_IntoStations
 drop procedure DataSeedInsertionSchema.Merge_Stations_IntoObjectsOfInterest
 drop procedure DataSeedInsertionSchema.InsertSeedStationsToGeometriesIntoDatabase
-drop procedure DataSeedInsertionSchema.InsertSeedTypesOfAPointIntoDatabase
+drop procedure DataSeedInsertionSchema.Merge_TypesOfAPoint_IntoTypesOfAStation
 drop procedure DataSeedInsertionSchema.InsertSeedPhotosIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedPhotosToObjectsOfInterestIntoDatabase
 
@@ -119,6 +119,6 @@ drop type DataSeedInsertionSchema.RailwayUnitsInsertionType
 drop type DataSeedInsertionSchema.ObjectsOfInterestInsertionType
 drop type DataSeedInsertionSchema.StationsInsertionType
 drop type DataSeedInsertionSchema.StationsToGeometriesInsertionType
-drop type DataSeedInsertionSchema.TypesOfAPointInsertionType
+drop type DataSeedInsertionSchema.TypesOfAStation_InsertionType
 drop type DataSeedInsertionSchema.PhotosInsertionType
 drop type DataSeedInsertionSchema.PhotosToObjectsOfInterestInsertionType

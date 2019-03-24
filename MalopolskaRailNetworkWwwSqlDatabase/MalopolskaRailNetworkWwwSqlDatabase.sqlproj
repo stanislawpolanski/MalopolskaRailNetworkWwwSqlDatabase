@@ -77,7 +77,7 @@
     <Build Include="Database\Tables\Railways.sql" />
     <Build Include="Database\Tables\RailwayUnits.sql" />
     <Build Include="Database\Tables\Stations.sql" />
-    <Build Include="Database\Tables\TypesOfAPoint.sql" />
+    <Build Include="Database\Tables\TypesOfAStation.sql" />
     <Build Include="SeedingData\Programmability\Parse\ParseGeometries.sql" />
     <Build Include="SeedingData\Programmability\Parse\ParseOwners.sql" />
     <Build Include="SeedingData\Programmability\Parse\ParseRailwaUnits.sql" />
@@ -102,13 +102,13 @@
     <Build Include="SeedingData\Programmability\Insertion\Types\RailwayUnitsInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\StationsInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\StationsToGeometriesInsertionType.sql" />
-    <Build Include="SeedingData\Programmability\Insertion\Types\TypesOfAPointInsertionType.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Types\TypesOfAStation_InsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedRailwayUnitsIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedRailwaysIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\Merge_RollingStock_IntoObjectsOfInterest.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\Merge_Stations_IntoStations.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedStationsToGeometriesIntoDatabase.sql" />
-    <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedTypesOfAPointIntoDatabase.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Procedures\Merge_TypesOfAPoint_IntoTypesOfAStation.sql" />
     <Build Include="Database\Tables\Photos.sql" />
     <Build Include="Database\Tables\PhotosToObjectsOfInterest.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedPhotosIntoDatabase.sql" />
