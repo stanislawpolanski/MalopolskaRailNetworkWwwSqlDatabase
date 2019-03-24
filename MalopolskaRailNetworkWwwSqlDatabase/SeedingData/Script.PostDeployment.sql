@@ -78,6 +78,8 @@ drop procedure DataSeedInsertionSchema.InsertSeedRollingStockIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedStationsIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedStationsToGeometriesIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedTypesOfAPointIntoDatabase
+drop procedure DataSeedInsertionSchema.InsertSeedPhotosIntoDatabase
+drop procedure DataSeedInsertionSchema.InsertSeedPhotosToObjectsOfInterestIntoDatabase
 
 drop function DataSeedInsertionSchema.ParseGeometries
 drop function DataSeedInsertionSchema.ParseRailways
@@ -87,6 +89,8 @@ drop function DataSeedInsertionSchema.ParseRailwayUnits
 drop function DataSeedInsertionSchema.ParseStations
 drop function DataSeedInsertionSchema.ParseStationsToGeometries
 drop function DataSeedInsertionSchema.ParseTypesOfAPoint
+drop function DataSeedInsertionSchema.ParsePhotos
+drop function DataSeedInsertionSchema.ParsePhotosToObjectsOfInterest
 
 drop function DataSeedInsertionSchema.ReadGeometriesJson
 drop function DataSeedInsertionSchema.ReadOwnersJson
@@ -96,6 +100,8 @@ drop function DataSeedInsertionSchema.ReadRollingStockJson
 drop function DataSeedInsertionSchema.ReadStationsJson
 drop function DataSeedInsertionSchema.ReadStationsToGeometriesJson
 drop function DataSeedInsertionSchema.ReadTypesOfAPointJson
+drop function DataSeedInsertionSchema.ReadPhotosJson
+drop function DataSeedInsertionSchema.ReadPhotosToObjectsOfInterestJson
 
 use MalopolskaRailNetworkWwwSqlDatabase
 drop type DataSeedInsertionSchema.GeometriesInsertionType
@@ -106,3 +112,5 @@ drop type DataSeedInsertionSchema.RollingStockInsertionType
 drop type DataSeedInsertionSchema.StationsInsertionType
 drop type DataSeedInsertionSchema.StationsToGeometriesInsertionType
 drop type DataSeedInsertionSchema.TypesOfAPointInsertionType
+drop type DataSeedInsertionSchema.PhotosInsertionType
+drop type DataSeedInsertionSchema.PhotosToObjectsOfInterestInsertionType
