@@ -76,7 +76,6 @@
     <Build Include="Database\Tables\Owners.sql" />
     <Build Include="Database\Tables\Railways.sql" />
     <Build Include="Database\Tables\RailwayUnits.sql" />
-    <Build Include="Database\Tables\RollingStock.sql" />
     <Build Include="Database\Tables\Stations.sql" />
     <Build Include="Database\Tables\TypesOfAPoint.sql" />
     <Build Include="SeedingData\Programmability\Parse\ParseGeometries.sql" />
@@ -101,13 +100,12 @@
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedOwnersIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\RailwaysInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\RailwayUnitsInsertionType.sql" />
-    <Build Include="SeedingData\Programmability\Insertion\Types\RollingStockInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\StationsInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\StationsToGeometriesInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\TypesOfAPointInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedRailwayUnitsIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedRailwaysIntoDatabase.sql" />
-    <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedRollingStockIntoDatabase.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Procedures\Merge_RollingStock_IntoObjectsOfInterest.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedStationsIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedStationsToGeometriesIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedTypesOfAPointIntoDatabase.sql" />
@@ -122,6 +120,8 @@
     <Build Include="SeedingData\Programmability\Read\ReadPhotosJson.sql" />
     <Build Include="SeedingData\Programmability\Read\ReadPhotosToObjectsOfInterestJson.sql" />
     <Build Include="SeedingData\Schema\DataSeedInsertionSchema.sql" />
+    <Build Include="Database\Tables\ObjectsOfInterest.sql" />
+    <Build Include="SeedingData\Programmability\Insertion\Types\ObjectsOfInterestInsertionType.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />

@@ -1,9 +1,9 @@
-﻿CREATE PROCEDURE [DataSeedInsertionSchema].[InsertSeedRollingStockIntoDatabase]
-    @SeedTable DataSeedInsertionSchema.RollingStockInsertionType readonly
+﻿CREATE PROCEDURE [DataSeedInsertionSchema].[InsertSeedRollingStockInto_ObjectsOfInterestTable_Database]
+    @SeedTable DataSeedInsertionSchema.ObjectsOfInterestInsertionType readonly
 AS
-    set identity_insert dbo.RollingStock on
+    set identity_insert dbo.ObjectsOfInterest on
 
-    merge into dbo.RollingStock
+    merge into dbo.ObjectsOfInterest
         using @SeedTable
             on ([@SeedTable].Id = dbo.RollingStock.Id)
 
@@ -16,5 +16,5 @@ AS
                 )
     ;
 
-    set identity_insert dbo.RollingStock off
+    set identity_insert dbo.ObjectsOfInterest off
 RETURN 0

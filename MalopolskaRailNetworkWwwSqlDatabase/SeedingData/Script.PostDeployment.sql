@@ -34,12 +34,12 @@ insert into @RailwayUnitsSeed
 
 exec DataSeedInsertionSchema.InsertSeedRailwayUnitsIntoDatabase @RailwayUnitsSeed;
 
--- Rolling stock
-declare @RollingStockSeed DataSeedInsertionSchema.RollingStockInsertionType;
+-- Rolling stock into objects of interest
+declare @RollingStockSeed DataSeedInsertionSchema.ObjectsOfInterestInsertionType;
 insert into @RollingStockSeed
     select * from DataSeedInsertionSchema.ParseRollingStock();
 
-exec DataSeedInsertionSchema.InsertSeedRollingStockIntoDatabase @RollingStockSeed;
+exec DataSeedInsertionSchema.Merge_RollingStock_IntoObjectsOfInterest @RollingStockSeed;
 
 -- Stations
 declare @StationsSeed DataSeedInsertionSchema.StationsInsertionType;
@@ -74,7 +74,7 @@ drop procedure DataSeedInsertionSchema.InsertSeedGeometriesIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedOwnersIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedRailwaysIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedRailwayUnitsIntoDatabase
-drop procedure DataSeedInsertionSchema.InsertSeedRollingStockIntoDatabase
+drop procedure DataSeedInsertionSchema.Merge_RollingStock_IntoObjectsOfInterest
 drop procedure DataSeedInsertionSchema.InsertSeedStationsIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedStationsToGeometriesIntoDatabase
 drop procedure DataSeedInsertionSchema.InsertSeedTypesOfAPointIntoDatabase
@@ -108,7 +108,7 @@ drop type DataSeedInsertionSchema.GeometriesInsertionType
 drop type DataSeedInsertionSchema.OwnersInsertionType
 drop type DataSeedInsertionSchema.RailwaysInsertionType
 drop type DataSeedInsertionSchema.RailwayUnitsInsertionType
-drop type DataSeedInsertionSchema.RollingStockInsertionType
+drop type DataSeedInsertionSchema.ObjectsOfInterestInsertionType
 drop type DataSeedInsertionSchema.StationsInsertionType
 drop type DataSeedInsertionSchema.StationsToGeometriesInsertionType
 drop type DataSeedInsertionSchema.TypesOfAPointInsertionType

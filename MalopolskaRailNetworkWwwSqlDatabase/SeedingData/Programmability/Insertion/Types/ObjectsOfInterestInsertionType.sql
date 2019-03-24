@@ -1,4 +1,4 @@
-﻿CREATE TYPE [DataSeedInsertionSchema].[RollingStockInsertionType] AS TABLE
+﻿CREATE TYPE [DataSeedInsertionSchema].[ObjectsOfInterestInsertionType] AS TABLE
 (
     [Id] INT NOT NULL PRIMARY KEY, 
 	[OwnerId] INT NOT NULL, 
