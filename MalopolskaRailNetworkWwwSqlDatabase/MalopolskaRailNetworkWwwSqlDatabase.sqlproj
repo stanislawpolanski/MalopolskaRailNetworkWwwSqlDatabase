@@ -69,6 +69,9 @@
     <Folder Include="SeedingData\Programmability\Insertion\Types" />
     <Folder Include="Common" />
     <Folder Include="SeedingData\Schema" />
+    <Folder Include="Database\API" />
+    <Folder Include="Database\API\Views" />
+    <Folder Include="Database\API\Schema" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Database\Tables\Geometries.sql" />
@@ -123,6 +126,8 @@
     <Build Include="Database\Tables\ObjectsOfInterest.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\ObjectsOfInterestInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\Merge_Stations_IntoObjectsOfInterest.sql" />
+    <Build Include="Database\API\Schema\DataAccess.sql" />
+    <Build Include="Database\API\Views\OwnersFull.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />

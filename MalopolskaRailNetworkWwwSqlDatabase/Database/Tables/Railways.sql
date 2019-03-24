@@ -12,3 +12,7 @@
     CONSTRAINT [AK_Railways_Name] UNIQUE ([Name])
 	-- Pair of Number and OwnerId seem to be unique, but it is not. Eg PLK railway 118 - used to be Nowy Targ - Sucha Góra, now it is railway to Kraków Balice.
 )
+
+GO
+
+CREATE INDEX [IX_Railways_OwnerId] ON [dbo].[Railways] ([OwnerId])

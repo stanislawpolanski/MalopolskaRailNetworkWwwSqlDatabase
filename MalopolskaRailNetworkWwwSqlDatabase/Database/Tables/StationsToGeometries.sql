@@ -10,3 +10,11 @@
     CONSTRAINT [FK_StationLocationPoints_ToStations] FOREIGN KEY ([StationId]) REFERENCES [Stations]([Id]), 
     CONSTRAINT [FK_StationLocationPoints_ToRailways] FOREIGN KEY ([RailwayId]) REFERENCES [Railways]([Id])
 )
+
+GO
+
+CREATE INDEX [IX_StationsToGeometries_RailwayId] ON [dbo].[StationsToGeometries] ([RailwayId])
+
+GO
+
+CREATE INDEX [IX_StationsToGeometries_StationId] ON [dbo].[StationsToGeometries] ([StationId])
