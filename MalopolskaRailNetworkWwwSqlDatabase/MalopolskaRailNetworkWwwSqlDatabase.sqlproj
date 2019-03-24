@@ -117,6 +117,10 @@
     <Build Include="SeedingData\Programmability\Insertion\Procedures\InsertSeedPhotosToObjectsOfInterestIntoDatabase.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\PhotosInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\PhotosToObjectsOfInterestInsertionType.sql" />
+    <Build Include="SeedingData\Programmability\Parse\ParsePhotos.sql" />
+    <Build Include="SeedingData\Programmability\Parse\ParsePhotosToObjects.sql" />
+    <Build Include="SeedingData\Programmability\Read\ReadPhotos.sql" />
+    <Build Include="SeedingData\Programmability\Read\ReadPhotosToObjects.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />
