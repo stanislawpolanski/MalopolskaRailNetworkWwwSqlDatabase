@@ -62,12 +62,12 @@ insert into @PhotosSeed
 
 exec DataSeedInsertionSchema.InsertSeedPhotosIntoDatabase @PhotosSeed;
 
----- Photos to objects table
---declare @PhotosToObjectsOfInterestSeed DataSeedInsertionSchema.PhotosToObjectsOfInterestInsertionType;
---insert into @PhotosToObjectsOfInterestSeed
---    select * from DataSeedInsertionSchema.ParsePhotosToObjectsOfInterest();
+-- Photos to objects table
+declare @PhotosToObjectsOfInterestSeed DataSeedInsertionSchema.PhotosToObjectsOfInterestInsertionType;
+insert into @PhotosToObjectsOfInterestSeed
+    select * from DataSeedInsertionSchema.ParsePhotosToObjectsOfInterest();
 
---exec DataSeedInsertionSchema.InsertSeedPhotosToObjectsOfInterestIntoDatabase @PhotosToObjectsOfInterestSeed
+exec DataSeedInsertionSchema.InsertSeedPhotosToObjectsOfInterestIntoDatabase @PhotosToObjectsOfInterestSeed
 
 -- clear database 
 drop procedure DataSeedInsertionSchema.InsertSeedGeometriesIntoDatabase
