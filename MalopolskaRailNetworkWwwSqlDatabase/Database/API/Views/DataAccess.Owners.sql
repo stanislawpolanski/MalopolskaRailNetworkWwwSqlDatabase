@@ -1,4 +1,4 @@
-﻿CREATE VIEW [DataAccess].[OwnersFull]
+﻿CREATE VIEW [DataAccess].[Owners]
     AS SELECT 
         Id,
         Name

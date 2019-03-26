@@ -126,8 +126,17 @@
     <Build Include="Database\Tables\ObjectsOfInterest.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\ObjectsOfInterestInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\Merge_Stations_IntoObjectsOfInterest.sql" />
-    <Build Include="Database\API\Schema\DataAccess.sql" />
-    <Build Include="Database\API\Views\OwnersFull.sql" />
+    <Build Include="Database\API\Schema\DataAccess.Schema.sql" />
+    <Build Include="Database\API\Views\DataAccess.Owners.sql" />
+    <Build Include="Database\API\Views\DataAccess.Geometries.sql" />
+    <Build Include="Database\API\Views\DataAccess.RollingStock.sql" />
+    <Build Include="Database\API\Views\DataAccess.Photos.sql" />
+    <Build Include="Database\API\Views\DataAccess.PhotosToObjectsOfInterest.sql" />
+    <Build Include="Database\API\Views\DataAccess.RailwayUnits.sql" />
+    <Build Include="Database\API\Views\DataAccess.Railways.sql" />
+    <Build Include="Database\API\Views\DataAccess.Stations.sql" />
+    <Build Include="Database\API\Views\DataAccess.StationsToGeometries.sql" />
+    <Build Include="Database\API\Views\DataAccess.TypesOfAStation.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />
