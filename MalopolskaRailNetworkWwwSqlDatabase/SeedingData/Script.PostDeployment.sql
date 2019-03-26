@@ -122,3 +122,5 @@ drop type DataSeedInsertionSchema.StationsToGeometriesInsertionType
 drop type DataSeedInsertionSchema.TypesOfAStation_InsertionType
 drop type DataSeedInsertionSchema.PhotosInsertionType
 drop type DataSeedInsertionSchema.PhotosToObjectsOfInterestInsertionType
+
+drop schema DataSeedInsertionSchema

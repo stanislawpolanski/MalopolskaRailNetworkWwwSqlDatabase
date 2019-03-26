@@ -4,4 +4,4 @@
         FilePath,
         AdditionDateTime,
         PhotoDescription
-        from Photos
+        from dbo.Photos
