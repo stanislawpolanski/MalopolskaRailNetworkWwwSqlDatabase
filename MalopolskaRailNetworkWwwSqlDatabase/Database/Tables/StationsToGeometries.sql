@@ -7,6 +7,7 @@
     [CentreKmpost] DECIMAL(6, 3) NOT NULL, 
     [EndingKmpost] DECIMAL(6, 3) NULL, 
     [RailwayId] INT NOT NULL, 
-    CONSTRAINT [FK_StationLocationPoints_ToStations] FOREIGN KEY ([StationId]) REFERENCES [Stations]([Id]), 
-    CONSTRAINT [FK_StationLocationPoints_ToRailways] FOREIGN KEY ([RailwayId]) REFERENCES [Railways]([Id])
+    CONSTRAINT [FK_StationsToGeometries_ToStations] FOREIGN KEY ([StationId]) REFERENCES [Stations]([Id]), 
+    CONSTRAINT [FK_StationsToGeometries_ToRailways] FOREIGN KEY ([RailwayId]) REFERENCES [Railways]([Id]),
+    CONSTRAINT [FK_StationsToGeometries_ToGeometries] FOREIGN KEY ([GeometryId]) REFERENCES [Geometries]([Id])
 )
