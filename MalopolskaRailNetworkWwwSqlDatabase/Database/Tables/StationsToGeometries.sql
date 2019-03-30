@@ -9,7 +9,9 @@
     [RailwayId] INT NOT NULL, 
     CONSTRAINT [FK_StationsToGeometries_ToStations] FOREIGN KEY ([StationId]) REFERENCES [Stations]([Id]), 
     CONSTRAINT [FK_StationsToGeometries_ToRailways] FOREIGN KEY ([RailwayId]) REFERENCES [Railways]([Id]),
-    CONSTRAINT [FK_StationsToGeometries_ToGeometries] FOREIGN KEY ([GeometryId]) REFERENCES [Geometries]([Id])
+    CONSTRAINT [FK_StationsToGeometries_ToGeometries] FOREIGN KEY ([GeometryId]) REFERENCES [Geometries]([Id]), 
+    CONSTRAINT [CK_StationsToGeometries_BeginningKmpost_LessOrEqual_CentreKmpost] CHECK (BeginningKmpost is null or BeginningKmpost <= CentreKmpost), 
+    CONSTRAINT [CK_StationsToGeometries_CentreKmpost_LessOrEqual_EndingKmpost] CHECK (EndingKmpost is null or CentreKmpost <= EndingKmpost)
 )
 
 GO
