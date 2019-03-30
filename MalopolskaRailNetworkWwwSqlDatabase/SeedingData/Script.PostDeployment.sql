@@ -43,8 +43,8 @@ exec DataSeedInsertionSchema.Merge_RollingStock_IntoObjectsOfInterest @RollingSt
 
 -- Insert stations into stations
 declare @StationsSeed DataSeedInsertionSchema.StationsInsertionType;
-insert into @StationsSeed (Id, RailwayUnitId, TypeOfAPointId)
-    select Id, RailwayUnitId, TypeOfAPointId from DataSeedInsertionSchema.ParseStations();
+insert into @StationsSeed (Id, TypeOfAPointId)
+    select Id, TypeOfAPointId from DataSeedInsertionSchema.ParseStations();
 
 exec DataSeedInsertionSchema.Merge_Stations_IntoStations @StationsSeed;
 

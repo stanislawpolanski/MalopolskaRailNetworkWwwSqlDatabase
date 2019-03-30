@@ -3,7 +3,6 @@
         dbo.ObjectsOfInterest.Id,
         dbo.ObjectsOfInterest.OwnerId,
         dbo.ObjectsOfInterest.Name,
-		dbo.Stations.RailwayUnitId,
 		dbo.Stations.TypeOfAPointId
         from dbo.ObjectsOfInterest
 		left join dbo.Stations
