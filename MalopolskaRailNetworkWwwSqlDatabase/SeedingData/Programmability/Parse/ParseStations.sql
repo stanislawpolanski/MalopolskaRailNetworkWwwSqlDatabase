@@ -17,7 +17,7 @@ BEGIN
 	        [Id] INT, 
             [Name] NVARCHAR(50), 
             [OwnerId] INT, 
-            [TypeOfAStation] INT
+            [TypeOfAStation] INT N'$.TypeOfAPoint'
             )
     return
 END
