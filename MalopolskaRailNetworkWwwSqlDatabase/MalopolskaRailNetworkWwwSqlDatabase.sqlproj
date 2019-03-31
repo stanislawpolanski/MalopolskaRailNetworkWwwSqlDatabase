@@ -34,6 +34,7 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <SqlTargetName>test1</SqlTargetName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -46,6 +47,7 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <SqlTargetName>MalopolskaRailNetworkWwwSqlDatabase</SqlTargetName>
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
@@ -158,9 +160,6 @@
     <None Include="Common\SchemaCompare.scmp" />
     <None Include="SeedingData\RawJson\Photos_Dataset.json" />
     <None Include="SeedingData\RawJson\PhotosToObjects_Dataset.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="MalopolskaRailNetworkWwwSqlDatabase.refactorlog" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="SeedingData\Script.PostDeployment.sql" />
