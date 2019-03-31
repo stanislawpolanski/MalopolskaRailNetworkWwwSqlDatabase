@@ -12,8 +12,8 @@
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>MalopolskaRailNetworkWwwSqlDatabase</RootNamespace>
-    <AssemblyName>MalopolskaRailNetworkWwwSqlDatabase</AssemblyName>
+    <RootNamespace>MRN_develop</RootNamespace>
+    <AssemblyName>MRN_develop</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -47,7 +47,7 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <SqlTargetName>MalopolskaRailNetworkWwwSqlDatabase</SqlTargetName>
+    <SqlTargetName>MRN_develop</SqlTargetName>
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
@@ -129,24 +129,24 @@
     <Build Include="Database\Tables\ObjectsOfInterest.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\ObjectsOfInterestInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\Merge_Stations_IntoObjectsOfInterest.sql" />
-    <Build Include="Database\API\Schema\DataAccess.Schema.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.Owners.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.Geometries.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.RollingStock.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.Photos.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.PhotosToObjectsOfInterest.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.RailwayUnits.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.Railways.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.Stations.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.StationsToGeometries.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.TypesOfAStation.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.GeometryById.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.OwnerById.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.Photos_ByObjectOfInterestId.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.RailwayById.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.Railways_ByStationId.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.StationById.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.StationToGeometries_ByStationId.sql" />
+    <None Include="Database\API\Schema\DataAccess.Schema.sql" />
+    <None Include="Database\API\GeneralTablesViews\DataAccess.Owners.sql" />
+    <None Include="Database\API\GeneralTablesViews\DataAccess.Geometries.sql" />
+    <None Include="Database\API\GeneralTablesViews\DataAccess.RollingStock.sql" />
+    <None Include="Database\API\GeneralTablesViews\DataAccess.Photos.sql" />
+    <None Include="Database\API\GeneralTablesViews\DataAccess.PhotosToObjectsOfInterest.sql" />
+    <None Include="Database\API\GeneralTablesViews\DataAccess.RailwayUnits.sql" />
+    <None Include="Database\API\GeneralTablesViews\DataAccess.Railways.sql" />
+    <None Include="Database\API\GeneralTablesViews\DataAccess.Stations.sql" />
+    <None Include="Database\API\GeneralTablesViews\DataAccess.StationsToGeometries.sql" />
+    <None Include="Database\API\GeneralTablesViews\DataAccess.TypesOfAStation.sql" />
+    <None Include="Database\API\DetailedTablesFunctions\DataAccess.GeometryById.sql" />
+    <None Include="Database\API\DetailedTablesFunctions\DataAccess.OwnerById.sql" />
+    <None Include="Database\API\DetailedTablesFunctions\DataAccess.Photos_ByObjectOfInterestId.sql" />
+    <None Include="Database\API\DetailedTablesFunctions\DataAccess.RailwayById.sql" />
+    <None Include="Database\API\DetailedTablesFunctions\DataAccess.Railways_ByStationId.sql" />
+    <None Include="Database\API\DetailedTablesFunctions\DataAccess.StationById.sql" />
+    <None Include="Database\API\DetailedTablesFunctions\DataAccess.StationToGeometries_ByStationId.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />

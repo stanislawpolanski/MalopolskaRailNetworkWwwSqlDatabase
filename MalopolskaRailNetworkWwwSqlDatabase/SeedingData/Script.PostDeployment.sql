@@ -111,7 +111,7 @@ drop function DataSeedInsertionSchema.ReadTypesOfAPointJson
 drop function DataSeedInsertionSchema.ReadPhotosJson
 drop function DataSeedInsertionSchema.ReadPhotosToObjectsOfInterestJson
 
-use MalopolskaRailNetworkWwwSqlDatabase
+use $(DatabaseName)
 drop type DataSeedInsertionSchema.GeometriesInsertionType
 drop type DataSeedInsertionSchema.OwnersInsertionType
 drop type DataSeedInsertionSchema.RailwaysInsertionType
