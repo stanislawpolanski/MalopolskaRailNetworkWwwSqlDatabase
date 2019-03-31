@@ -8,10 +8,10 @@ AS
             on ([@SeedTable].Id = dbo.Stations.Id)
 
             when not matched then
-                insert (Id, TypeOfAPointId) values
+                insert (Id, TypeOfAStationId) values
                 (
                     [@SeedTable].[Id], 
-                    [@SeedTable].[TypeOfAPointId]
+                    [@SeedTable].[TypeOfAStationId]
                 )
     ;
 

@@ -41,19 +41,19 @@ insert into @RollingStockSeed
 
 exec DataSeedInsertionSchema.Merge_RollingStock_IntoObjectsOfInterest @RollingStockSeed;
 
--- Insert stations into stations
-declare @StationsSeed DataSeedInsertionSchema.StationsInsertionType;
-insert into @StationsSeed (Id, TypeOfAPointId)
-    select Id, TypeOfAPointId from DataSeedInsertionSchema.ParseStations();
-
-exec DataSeedInsertionSchema.Merge_Stations_IntoStations @StationsSeed;
-
 -- Insert stations into objects of interest
 declare @Stations_ToObjectsOfInterest_Seed DataSeedInsertionSchema.ObjectsOfInterestInsertionType;
 insert into @Stations_ToObjectsOfInterest_Seed (Id, OwnerId, Name)
     select Id, OwnerId, Name from DataSeedInsertionSchema.ParseStations();
 
 exec DataSeedInsertionSchema.Merge_Stations_IntoObjectsOfInterest @Stations_ToObjectsOfInterest_Seed;
+
+-- Insert stations into stations
+declare @StationsSeed DataSeedInsertionSchema.StationsInsertionType;
+insert into @StationsSeed (Id, TypeOfAStationId)
+    select Id, TypeOfAStationId from DataSeedInsertionSchema.ParseStations();
+
+exec DataSeedInsertionSchema.Merge_Stations_IntoStations @StationsSeed;
 
 -- Stations to geometries
 declare @StationsToGeometriesSeed DataSeedInsertionSchema.StationsToGeometriesInsertionType;

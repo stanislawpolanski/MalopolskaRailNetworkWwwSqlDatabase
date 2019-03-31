@@ -6,7 +6,7 @@ RETURNS @returntable TABLE
 	[Id] INT NOT NULL PRIMARY KEY, 
     [Name] NVARCHAR(50) NOT NULL, 
     [OwnerId] INT NOT NULL, 
-    [TypeOfAPointId] INT
+    [TypeOfAStationId] INT
 )
 AS
 BEGIN
@@ -17,7 +17,7 @@ BEGIN
 	        [Id] INT, 
             [Name] NVARCHAR(50), 
             [OwnerId] INT, 
-            [TypeOfAPoint] INT
+            [TypeOfAStation] INT
             )
     return
 END
