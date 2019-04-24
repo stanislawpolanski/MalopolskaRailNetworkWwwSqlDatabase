@@ -1,8 +1,6 @@
 ﻿CREATE PROCEDURE [DataSeedInsertionSchema].[Merge_Stations_IntoStations]
     @SeedTable DataSeedInsertionSchema.StationsInsertionType readonly
 AS
-    set identity_insert dbo.Stations on
-
     merge into dbo.Stations
         using @SeedTable
             on ([@SeedTable].Id = dbo.Stations.Id)
@@ -14,6 +12,4 @@ AS
                     [@SeedTable].[TypeOfAStationId]
                 )
     ;
-
-    set identity_insert dbo.Stations off
 RETURN 0
