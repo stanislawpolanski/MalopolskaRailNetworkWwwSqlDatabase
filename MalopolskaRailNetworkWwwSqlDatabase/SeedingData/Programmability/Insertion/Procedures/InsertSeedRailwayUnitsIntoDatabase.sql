@@ -8,11 +8,12 @@ AS
             on ([@SeedTable].Id = dbo.RailwayUnits.Id)
 
             when not matched then
-                insert (Id, Name, GeometriesId) values
+                insert (Id, Name, GeometriesId, OwnerId) values
                 (
                     [@SeedTable].Id,
                     [@SeedTable].Name,
-                    [@SeedTable].GeometriesId
+                    [@SeedTable].GeometriesId,
+                    [@SeedTable].OwnerId
                 )
     ;
 
