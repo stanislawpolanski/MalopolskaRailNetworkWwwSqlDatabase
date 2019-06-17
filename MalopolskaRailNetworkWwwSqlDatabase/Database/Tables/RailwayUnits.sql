@@ -6,5 +6,6 @@
     [OwnerId] INT NOT NULL,
     CONSTRAINT [FK_RailwayUnits_ToGeometries] FOREIGN KEY ([GeometriesId]) REFERENCES [Geometries]([Id]), 
     CONSTRAINT [AK_RailwayUnits_Name] UNIQUE ([Name]),
-	CONSTRAINT [AK_RailwayUnits_GeometriesId] UNIQUE ([GeometriesId])
+	CONSTRAINT [AK_RailwayUnits_GeometriesId] UNIQUE ([GeometriesId]), 
+    CONSTRAINT [FK_RailwayUnits_ToOwners] FOREIGN KEY ([OwnerId]) REFERENCES [Owners]([Id])
 )
