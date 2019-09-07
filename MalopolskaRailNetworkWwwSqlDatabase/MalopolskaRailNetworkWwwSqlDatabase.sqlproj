@@ -75,6 +75,7 @@
     <Folder Include="Database\API\GeneralTablesViews" />
     <Folder Include="Database\API\Schema" />
     <Folder Include="Database\API\DetailedTablesFunctions" />
+    <Folder Include="Database\Triggers" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Database\Tables\Geometries.sql" />
@@ -147,6 +148,9 @@
     <Build Include="Database\API\DetailedTablesFunctions\DataAccess.Railways_ByStationId.sql" />
     <Build Include="Database\API\DetailedTablesFunctions\DataAccess.StationById.sql" />
     <Build Include="Database\API\DetailedTablesFunctions\DataAccess.StationToGeometries_ByStationId.sql" />
+    <Build Include="Database\Triggers\DeleteStation.sql" />
+    <Build Include="Database\Triggers\DeleteObjectOfInterest.sql" />
+    <Build Include="Database\Triggers\DeleteStationToGeometries.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SeedingData\RawJson\Geometries_Dataset.json" />
