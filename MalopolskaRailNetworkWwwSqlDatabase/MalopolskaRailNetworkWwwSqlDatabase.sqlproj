@@ -71,10 +71,6 @@
     <Folder Include="SeedingData\Programmability\Insertion\Types" />
     <Folder Include="Common" />
     <Folder Include="SeedingData\Schema" />
-    <Folder Include="Database\API" />
-    <Folder Include="Database\API\DetailedTablesFunctions" />
-    <Folder Include="Database\API\GeneralTablesViews" />
-    <Folder Include="Database\API\Schema" />
     <Folder Include="Database\Triggers" />
   </ItemGroup>
   <ItemGroup>
@@ -130,24 +126,6 @@
     <Build Include="Database\Tables\ObjectsOfInterest.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Types\ObjectsOfInterestInsertionType.sql" />
     <Build Include="SeedingData\Programmability\Insertion\Procedures\Merge_Stations_IntoObjectsOfInterest.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.GeometryById.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.OwnerById.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.Photos_ByObjectOfInterestId.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.RailwayById.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.Railways_ByStationId.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.StationById.sql" />
-    <Build Include="Database\API\DetailedTablesFunctions\DataAccess.StationToGeometries_ByStationId.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.Geometries.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.Owners.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.Photos.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.PhotosToObjectsOfInterest.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.Railways.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.RailwayUnits.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.RollingStock.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.Stations.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.StationsToGeometries.sql" />
-    <Build Include="Database\API\GeneralTablesViews\DataAccess.TypesOfAStation.sql" />
-    <Build Include="Database\API\Schema\DataAccess.Schema.sql" />
     <Build Include="Database\Triggers\DeleteStationsToGeometries.sql" />
   </ItemGroup>
   <ItemGroup>
